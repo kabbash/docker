@@ -1,0 +1,7 @@
+sudo: required
+services: 
+  - docker
+before-install:
+  - docker build -f Dockerfile.dev -t testImage .
+script: 
+  - docker run -e CI=true testImage npm run test
