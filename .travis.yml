@@ -2,6 +2,6 @@ sudo: required
 services: 
   - docker
 before-install:
-  - docker build -f Dockerfile.dev -t testImage .
+  - docker build -f Dockerfile.dev -t testimage .
 script: 
-  - docker run -e CI=true testImage npm run test
+  - docker run -e CI=true testimage npm run test
