@@ -5,3 +5,15 @@ before-install:
   - docker build -f Dockerfile.dev -t testimage .
 script: 
   - docker run -e CI=true testimage npm run test
+deploy:
+  provider: elasticbeanstalk
+  region: "eu-north-1"
+  app: "docker-course"
+  env: "Docker-course-env"
+  bucket_name: "elasticbeanstalk-eu-north-1-807393893709"
+  bucket_path: "docker-course"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: "$AWS_SECRET_KEY"
+

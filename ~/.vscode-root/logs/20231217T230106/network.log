@@ -1,2 +1,0 @@
-2023-12-18 19:03:16.384 [error] electron #138: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_ADDRESS_UNREACHABLE
-2023-12-18 19:03:19.711 [error] electron #139: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_ADDRESS_UNREACHABLE
